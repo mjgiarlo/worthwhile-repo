@@ -45,4 +45,12 @@ gem 'unicorn-rails'
 # gem 'debugger', group: [:development, :test]
 
 # Use worthwhile for basic repo functions
-gem 'worthwhile'
+gem 'worthwhile', github: 'curationexperts/worthwhile'
+
+gem "devise"
+gem "devise-guests", "~> 0.3"
+group :development, :test do
+  gem 'engine_cart'
+  gem "rspec-rails"
+  gem "jettywrapper"
+end
